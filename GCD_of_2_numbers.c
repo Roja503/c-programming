@@ -1,11 +1,14 @@
 #include <stdio.h>
 
 int main() {
-   int a=3,b=6,max;
-   max=(a>b)?a:b;
-   if(max % a == 0 && max % b == 0)
+   int a=3,b=6;
+   while(a!=b)
    {
-       printf("LCM %d,%d,%d",a,b,max);
-    }
+       if(a>b)
+       a-=b;
+       else
+       b-=a;
+   }
+   printf("gcd is %d",a);
     return 0;
 }
