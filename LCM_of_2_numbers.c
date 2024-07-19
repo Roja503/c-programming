@@ -5,7 +5,7 @@ int main() {
    max=(a>b)?a:b;
    if(max % a == 0 && max % b == 0)
    {
-       printf("LCM %d,%d,%d",a,b,max);
+       printf("LCM %d and %d is %d",a,b,max);
     }
     return 0;
 }
